@@ -145,7 +145,7 @@ function BottomTabNavigator() {
       /> */}
       <BottomTab.Screen
         name="ChatScreen"
-        component={ChatScreen}
+        component={SearchScreen}
         options={{
           title: `${t('tabTwo')}`,
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
@@ -171,4 +171,20 @@ function TabBarIcon(props: {
   color: string;
 }) {
   return <FontAwesome size={30} style={{ marginBottom: -3 }} {...props} />;
+}
+
+function SearchScreen() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Test"
+        component={ChatScreen}
+        options={{
+          headerSearchBarOptions: {
+            placeholder: 'Search',
+          },
+        }}
+      />
+    </Stack.Navigator>
+  );
 }

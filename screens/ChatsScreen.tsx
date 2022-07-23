@@ -25,7 +25,6 @@ export default function TabTwoScreen() {
 
   return (
     <SafeAreaView>
-      <SearchComponent />
       {/* <Card customStyles={styles.container}></Card> */}
     </SafeAreaView>
   );

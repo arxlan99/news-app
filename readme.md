@@ -3,6 +3,14 @@ This is a news mobile app which made with #reactnative. Application has drawer a
 
 <img src="assets/gif/animation.gif" height="500" >
 
+## Project features
+
+- [x] Multilanguage
+- [x] Dark theme
+- [x] Drawer and tab navigator
+- [x] Navigation config and filtered data
+- [x] Context Api
+
 ## Usage
 
 ### 1. Clone repo

@@ -4,6 +4,7 @@ import {
   Button,
   StyleSheet,
   TouchableOpacity,
+  TouchableWithoutFeedback,
   useColorScheme,
 } from 'react-native';
 import { ThemeContext } from '../context/ColorContext';
@@ -70,7 +71,7 @@ export default function SettingsScreen() {
         <Card customStyles={styles.container}>
           <CustomCardView
             customStyles={{
-              marginBottom: 5,
+              marginBottom: 3,
             }}
           >
             <Button
@@ -82,7 +83,7 @@ export default function SettingsScreen() {
 
           <CustomCardView
             customStyles={{
-              marginVertical: 5,
+              marginVertical: 3,
             }}
           >
             <Button
@@ -94,7 +95,7 @@ export default function SettingsScreen() {
           <HorizontalLine />
           <CustomCardView
             customStyles={{
-              marginTop: 5,
+              marginTop: 3,
             }}
           >
             <Button
@@ -108,7 +109,7 @@ export default function SettingsScreen() {
       <CustomView customStyles={styles.cardContainer}>
         <CustomText
           customStyles={{
-            marginBottom: 5,
+            marginBottom: 3,
           }}
         >
           {t('langugage')}
@@ -116,7 +117,7 @@ export default function SettingsScreen() {
         <Card customStyles={styles.container}>
           <CustomCardView
             customStyles={{
-              marginBottom: 5,
+              marginBottom: 3,
             }}
           >
             <Button
@@ -129,7 +130,7 @@ export default function SettingsScreen() {
 
           <CustomCardView
             customStyles={{
-              marginTop: 5,
+              marginTop: 3,
             }}
           >
             <Button
@@ -145,7 +146,7 @@ export default function SettingsScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    padding: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },

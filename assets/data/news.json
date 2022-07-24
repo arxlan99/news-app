@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "newsTitle": "WHO declares global health",
+        "newsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est leo, fringilla ut dolor sit amet, gravida suscipit enim. Morbi quis suscipit metus, euismod elementum elit. Nullam dignissim tortor sit amet velit pulvinar porttitor. Curabitur aliquet bibendum arcu, quis egestas orci semper sit amet. Nullam aliquam elementum elementum. Nam volutpat arcu vel erat egestas, at mollis eros facilisis. Duis blandit odio quis libero rutrum, non suscipit neque condimentum. Morbi non leo ante. Cras sit amet pellentesque sem, quis dignissim nunc. Proin orci augue, venenatis et velit vel, commodo condimentum nisi. Mauris faucibus aliquam mauris ac maximus. In at ex odio.",
+        "type": ["business", "technology"],
+        "newImageUrl": "https://www.reuters.com/resizer/is6nMAVwwhN6aLBM7bdY5HkNZYA=/480x251/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/7LCSZ2ZU2BADPKLKGP4APKMA54.JPG"
+    }, 
+    {
+        "id": 2,
+        "newsTitle": "Ukraine and Russia: What you need to know right now",
+        "newsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus maximus eleifend vestibulum. Integer justo lectus, varius non ultricies id, pellentesque ac lectus. Aliquam efficitur semper justo, in consequat est dapibus quis. Fusce venenatis nibh nec nulla blandit molestie. Praesent eu arcu ac orci accumsan porttitor id sit amet ligula. Phasellus ultrices consequat blandit. Aliquam dolor lacus, finibus et tempor non, fringilla ut lorem. Donec dignissim tellus sed semper egestas. Vestibulum a iaculis orci. Aenean condimentum sagittis orci, eget euismod arcu efficitur et. Etiam a felis feugiat nulla congue pellentesque. Donec est leo, fringilla ut dolor sit amet, gravida suscipit enim. Morbi quis suscipit metus, euismod elementum elit. Nullam dignissim tortor sit amet velit pulvinar porttitor. Curabitur aliquet bibendum arcu, quis egestas orci semper sit amet. Nullam aliquam elementum elementum. Nam volutpat arcu vel erat egestas, at mollis eros facilisis. Duis blandit odio quis libero rutrum, non suscipit neque condimentum. Morbi non leo ante. Cras sit amet pellentesque sem, quis dignissim nunc. Proin orci augue, venenatis et velit vel, commodo condimentum nisi. Mauris faucibus aliquam mauris ac maximus. In at ex odio.",
+        "type": ["business", "world", "technology"],
+        "newImageUrl": "https://www.reuters.com/resizer/Zlp23PCT3PZvIuL6tipIPelpYvY=/480x251/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/HE634E7225FPHM2TKSJJVNZ57Q.JPG"
+    },
+    {
+        "id": 3,
+        "newsTitle": "China launches second space station module",
+        "newsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est leo, fringilla ut dolor sit amet, gravida suscipit enim. Morbi quis suscipit metus, euismod elementum elit. Nullam dignissim tortor sit amet velit pulvinar porttitor. Curabitur aliquet bibendum arcu, quis egestas orci semper sit amet. Nullam aliquam elementum elementum. Nam volutpat arcu vel erat egestas, at mollis eros facilisis. Duis blandit odio quis libero rutrum, non suscipit neque condimentum. Morbi non leo ante. Cras sit amet pellentesque sem, quis dignissim nunc. Proin orci augue, venenatis et velit vel, commodo condimentum nisi. Mauris faucibus aliquam mauris ac maximus. In at ex odio.",
+        "type": ["business", "world"],
+        "newImageUrl": "https://www.reuters.com/resizer/ZLC67_bS6vtn0ITqLogcz6L_2RU=/480x251/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/HB4GXWLQZNEZ5EKTTFBR4A5RSU.JPG"
+    },
+    {
+        "id": 4,
+        "newsTitle": "World Court says Myanmar genocide case to proceed",
+        "newsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est leo, fringilla ut dolor sit amet, gravida suscipit enim. Morbi quis suscipit metus, euismod elementum elit. Nullam dignissim tortor sit amet velit pulvinar porttitor. Curabitur aliquet bibendum arcu, quis egestas orci semper sit amet. Nullam aliquam elementum elementum. Nam volutpat arcu vel erat egestas, at mollis eros facilisis. Duis blandit odio quis libero rutrum, non suscipit neque condimentum. Morbi non leo ante. Cras sit amet pellentesque sem, quis dignissim nunc. Proin orci augue, venenatis et velit vel, commodo condimentum nisi. Mauris faucibus aliquam mauris ac maximus. In at ex odio.",
+        "type": ["business", "technology"],
+        "newImageUrl": "https://www.reuters.com/resizer/f7l39_uSuRdmyfEDD1YrS_bASr4=/960x503/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/ONAY5TVZDJNF7E6CJLVC5TQTFE.jpg"
+    },
+    {
+        "id": 5,
+        "newsTitle": "Oil and bread",
+        "newsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est leo, fringilla ut dolor sit amet, gravida suscipit enim. Morbi quis suscipit metus, euismod elementum elit. Nullam dignissim tortor sit amet velit pulvinar porttitor. Curabitur aliquet bibendum arcu, quis egestas orci semper sit amet. Nullam aliquam elementum elementum. Nam volutpat arcu vel erat egestas, at mollis eros facilisis. Duis blandit odio quis libero rutrum, non suscipit neque condimentum. Morbi non leo ante. Cras sit amet pellentesque sem, quis dignissim nunc. Proin orci augue, venenatis et velit vel, commodo condimentum nisi. Mauris faucibus aliquam mauris ac maximus. In at ex odio.",
+        "type": ["economy", "world"],
+        "newImageUrl": "https://www.reuters.com/resizer/7ibXR5GY4zim3NFIbCfkYHXkR_4=/960x503/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/WHICRIDW65NK3EQXU7ZSOZ5EII.jpg"
+    }
+]

@@ -22,7 +22,6 @@ const Card = (props: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     borderRadius: 10,
   },
 });

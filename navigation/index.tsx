@@ -1,10 +1,3 @@
-/**
- * If you are not familiar with React Navigation, refer to the "Fundamentals" guide:
- * https://reactnavigation.org/docs/getting-started
- *
- */
-import { FontAwesome } from '@expo/vector-icons';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {
   NavigationContainer,
   DefaultTheme,
@@ -12,29 +5,19 @@ import {
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
-import { ColorSchemeName, Pressable } from 'react-native';
+import { ColorSchemeName } from 'react-native';
 
-import Colors from '../constants/Colors';
-import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
-import ContactsScreen from '../screens/ContactsScreen';
-import SettingsScreen from '../screens/SettingsScreen';
-import ChatScreen from '../screens/ChatsScreen';
-import {
-  RootDrawerList,
-  RootStackParamList,
-  RootTabParamList,
-  RootTabScreenProps,
-} from '../types';
+import { default as Search } from '../screens/SearchScreen';
+import { RootStackParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
-import { Feather } from '@expo/vector-icons';
 import { ThemeContext } from '../context/ColorContext';
 import { getData } from '../utils/local-storage';
+import BottomTabNavigator from './BottomTabNavigator';
 import { useTranslation } from 'react-i18next';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import BusinessScreen from '../screens/NewsScreen/BusinessScreen';
-import WorldScreen from '../screens/NewsScreen/WorldScreen';
+import NewsDetailScreen from '../screens/NewsDetailScreen';
+import { SearchContext } from '../context/SearchContext';
 
 export default function Navigation({
   colorScheme,
@@ -71,9 +54,10 @@ export default function Navigation({
   );
 }
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+export const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
+  const { t } = useTranslation();
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -83,14 +67,11 @@ function RootNavigator() {
           headerShown: false,
         }}
       />
-      {/*       <Stack.Screen
-        name="DrawRoot"
-        component={DrawerNavigator}
-        options={{
-          headerShown: false,
-        }}
+      <Stack.Screen
+        name="NewsDetailScreen"
+        component={NewsDetailScreen}
+        options={{ title: `${t('newsDetail')}`, headerShown: true }}
       />
- */}
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
@@ -103,72 +84,26 @@ function RootNavigator() {
   );
 }
 
-const Drawer = createDrawerNavigator<RootDrawerList>();
-
-function DrawerNavigator() {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="BusinessScreen" component={BusinessScreen} />
-      <Drawer.Screen name="WorldScreen" component={WorldScreen} />
-    </Drawer.Navigator>
-  );
-}
-const BottomTab = createBottomTabNavigator<RootTabParamList>();
-
-function BottomTabNavigator() {
+export function SearchScreen() {
   const { t } = useTranslation();
-  const currentColor = React.useContext(ThemeContext);
-  const colorScheme = currentColor.theme;
+  const { setFilteredTitle } = React.useContext(SearchContext);
 
   return (
-    <BottomTab.Navigator
-      initialRouteName="ContactsScreen"
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme].tint,
-      }}
-    >
-      <BottomTab.Screen
-        name="ContactsScreen"
-        component={DrawerNavigator}
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Search"
+        component={Search}
         options={{
-          title: `${t('contacts')}`,
-          headerShown: false,
-        }}
-      />
-      {/*    <BottomTab.Screen
-        name="ContactsScreen"
-        component={ContactsScreen}
-        options={{
-          title: `${t('contacts')}`,
-          headerShown: true,
-        }}
-      /> */}
-      <BottomTab.Screen
-        name="ChatScreen"
-        component={ChatScreen}
-        options={{
-          title: `${t('tabTwo')}`,
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerShown: false,
-        }}
-      />
-      <BottomTab.Screen
-        name="SettingsScreen"
-        component={SettingsScreen}
-        options={{
-          title: `${t('settings')}`,
-          tabBarIcon: ({ color }) => (
-            <Feather name="settings" size={24} color={color} />
-          ),
-        }}
-      />
-    </BottomTab.Navigator>
-  );
-}
+          title: `${t('search')}`,
 
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
-  color: string;
-}) {
-  return <FontAwesome size={30} style={{ marginBottom: -3 }} {...props} />;
+          headerSearchBarOptions: {
+            placeholder: `${t('search')}`,
+            onChangeText: (event) => {
+              setFilteredTitle(event.nativeEvent.text.toLowerCase());
+            },
+          },
+        }}
+      />
+    </Stack.Navigator>
+  );
 }

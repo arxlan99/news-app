@@ -21,20 +21,24 @@ export type RootStackParamList = {
   Modal: undefined;
   NotFound: undefined;
   DrawRoot: undefined;
+  Search: undefined;
+  NewsDetailScreen: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, Screen>;
 
 export type RootTabParamList = {
-  ContactsScreen: undefined;
-  ChatScreen: undefined;
+  NewsGeneralScreen: undefined;
+  SearchScreen: undefined;
   SettingsScreen: undefined;
 };
 
 export type RootDrawerList = {
   BusinessScreen: undefined;
   WorldScreen: undefined;
+  EconomyScreen: undefined;
+  TechnologyScreen: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> =

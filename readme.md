@@ -10,6 +10,7 @@ This is a news mobile app which made with #reactnative. Application has drawer a
 - [x] Drawer and tab navigator
 - [x] Navigation config and filtered data
 - [x] Context Api
+- [x] AsyncStorage to store language and dark theme features
 
 ## Usage
 

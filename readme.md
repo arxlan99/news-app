@@ -1,6 +1,6 @@
 # React Native Coinbase Clone
 This is a news mobile app which made with #reactnative. Application has drawer and tab navigations with nested navigator. Dummy data was used to preview news
-
+Gif:
 <img src="assets/gif/animation.gif" height="500" >
 
 ## Project features
